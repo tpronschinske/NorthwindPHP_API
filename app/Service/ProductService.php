@@ -2,7 +2,9 @@
 
 namespace Service;
 
-class ProductService extends \Core\Service {
+use \Core\Service as BaseService;
+
+class ProductService extends BaseService {
 
   public function getProducts(){
       return $this->db->select("SELECT * FROM " . PREFIX . "products");

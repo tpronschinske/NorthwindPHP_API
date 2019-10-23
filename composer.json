@@ -1,0 +1,22 @@
+{
+    "name": "isla-mvc-framework/framework",
+    "type": "project",
+    "description": "Framework for PHP 5.5+",
+    "homepage": "https://github.com/isla-mvc-framework/framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Travis Pronschinske",
+            "email": "info@cooneycreative.us",
+            "homepage": "http://cooneywebdesign.com/",
+            "role": "Developer/Owner"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {"": "app/"}
+    },
+    "minimum-stability": "dev"
+}

@@ -1,5 +1,4 @@
 app/Core/Config.php
-.ftpconfig
 .DS_Store
 error_log
 errorlog.html

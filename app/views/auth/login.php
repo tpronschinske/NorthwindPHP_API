@@ -4,18 +4,14 @@ use \Helpers\Form;
 use \Core\Error;
 
 ?>
+<?php echo $data['email']; ?>
+<?php echo $data['password']; ?>
 <div class="row">
   <div class="col-sm-12">
-    <p><?php echo $data['jwt']; ?></p>
-    <p><?php var_dump($data['decoded']); ?></p>
-    <p><?php echo date('m/d/Y h:m:s', $data['decoded']['iat']) ?></p>
-    <p><?php echo date('m/d/Y h:m:s', $data['decoded']['nbf']) ?></p>
-
-
     <div class="login-wrapper">
         <?php echo Form::open(array('method' => 'post', 'class' => 'login')); ?>
         <section class="title">
-            
+
             <h3 class="welcome">Property Management System</h3>
         </section>
         <div class="login-group">

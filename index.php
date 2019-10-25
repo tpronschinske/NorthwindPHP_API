@@ -27,7 +27,7 @@ if (file_exists(SMVC.'vendor/autoload.php')) {
 }
 
 if (!is_readable(SMVC.'app/Core/Config.php')) {
-    die('No Config.php found, configure and rename Config.example.php to Config.php in app/Core.');
+    die('No Config.php found, configure and rename app.Config.php to Config.php in app/Core.');
 }
 
 /*

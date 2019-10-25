@@ -5,6 +5,7 @@ use \DomainException;
 use \InvalidArgumentException;
 use \UnexpectedValueException;
 use \DateTime;
+use \Exceptions\ExpiredException as ExpiredException;
 
 class Jwt
 {

@@ -15,9 +15,12 @@ use Helpers\Hooks;
 /* Define routes. */
 Router::any('', 'Controllers\HomeController@index');
 Router::any('login', 'Controllers\AuthController@login');
+Router::any('login-test', 'Controllers\AuthController@testLogin');
 Router::any('reset', 'Controllers\AuthController@resetEmail');
 Router::any('pass/(:any)', 'Controllers\AuthController@reset');
 Router::any('logout', 'Controllers\AuthController@logout');
+
+Router::any('install', 'Controllers\InstallController@index');
 
 Router::any('/customer', 'Controllers\CustomerController@getCustomers');
 Router::any('/customer/list', 'Controllers\CustomerController@getCustomerList');

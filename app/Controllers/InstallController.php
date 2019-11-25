@@ -13,12 +13,7 @@ class InstallController extends Controller {
         parent::__construct();
     }
 
-    public function index(){
-
-      if(DB_NAME != ''){
-        Url::redirect('');
-      }
-
+    public function index() {
       View::renderTemplate('header');
       View::render('install/install');
       View::renderTemplate('footer');

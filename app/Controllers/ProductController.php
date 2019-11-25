@@ -40,10 +40,6 @@ class ProductController extends Controller
            throw new Exception('Product Not Found Exception', 404);
         }
     } catch (Exception $e) {
-        // http_response_code(404);
-        // var_dump($e);
-        // echo($e->getMessage());
-        // echo($e->getCode());
         ResponseMiddleware::ErrorJsonResponse($e);
     }
   }

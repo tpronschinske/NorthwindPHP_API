@@ -15,11 +15,13 @@ class GateKeeper
   {
   }
 
-  public function validateUserToken(){
+  public function validateHeaders(){
     try {
       $headers = apache_request_headers();
       $token = $headers['Authorization'];
-			return Csrf::validateToken($token);
+			$decoded = JWT::decode($token);
+      var_dump($decoded);
+      exit;
     } catch (Exception $e){
       throw new Exception('Not Authorized Exception', 401);
       ResponseMiddleware::ErrorJsonResponse($e);

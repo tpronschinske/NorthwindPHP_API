@@ -6,8 +6,8 @@ use \Helpers\Session;
 use \Helpers\Password;
 use \Helpers\Url;
 use \Helpers\Request;
+use \Middleware\AuthMiddleware;
 
-// Fake Auth Controller, Accepts any user and password
 
 class AuthController extends Controller {
 
@@ -17,11 +17,9 @@ class AuthController extends Controller {
 
     public function login(){
 
-      if(Request::isPost()){
-        $data['email'] = Request::post('email');
-        $data['password'] = Request::post('password');
 
-      }
+
+      $token = AuthMiddleware::getToken();
 
 
       View::renderTemplate('header');

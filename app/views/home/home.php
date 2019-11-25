@@ -12,6 +12,46 @@
 </div>
 
 <div>
+	<h3>Employee Endpoints</h3>
+	<ul>
+		<li><a href="http://northwind.cooneycreative.net/employee" target="_blank">Get Employees (http://northwind.cooneycreative.net/employee)</a></li>
+		<li><a href="http://northwind.cooneycreative.net/employee/1" target="_blank">Get Employee By Id -> 1 (http://northwind.cooneycreative.net/employee/:id)</a></li>
+	</ul>
+</div>
+
+<div>
+	<h3>Region Endpoints</h3>
+	<ul>
+		<li><a href="http://northwind.cooneycreative.net/region" target="_blank">Get Regions (http://northwind.cooneycreative.net/region)</a></li>
+		<li><a href="http://northwind.cooneycreative.net/region/1" target="_blank">Get Region By Id -> 1 (http://northwind.cooneycreative.net/region/:id)</a></li>
+	</ul>
+</div>
+
+<div>
+	<h3>Territories Endpoints</h3>
+	<ul>
+		<li><a href="http://northwind.cooneycreative.net/territory" target="_blank">Get Territories (http://northwind.cooneycreative.net/territory)</a></li>
+		<li><a href="http://northwind.cooneycreative.net/territory/1" target="_blank">Get Territory By Id -> 1 (http://northwind.cooneycreative.net/territory/:id)</a></li>
+	</ul>
+</div>
+
+<div>
+	<h3>Shipper Endpoints</h3>
+	<ul>
+		<li><a href="http://northwind.cooneycreative.net/shipper" target="_blank">Get Shippers (http://northwind.cooneycreative.net/shipper)</a></li>
+		<li><a href="http://northwind.cooneycreative.net/shipper/1" target="_blank">Get Shipper By Id -> 1 (http://northwind.cooneycreative.net/shipper/:id)</a></li>
+	</ul>
+</div>
+
+<div>
+	<h3>Supplier Endpoints</h3>
+	<ul>
+		<li><a href="http://northwind.cooneycreative.net/supplier" target="_blank">Get Suppliers (http://northwind.cooneycreative.net/supplier)</a></li>
+		<li><a href="http://northwind.cooneycreative.net/supplier/1" target="_blank">Get Supplier By Id -> 1 (http://northwind.cooneycreative.net/supplier/:id)</a></li>
+	</ul>
+</div>
+
+<div>
 	<h3>Order Endpoints</h3>
 	<ul>
 		<li><a href="http://northwind.cooneycreative.net/order" target="_blank">Get Orders (http://northwind.cooneycreative.net/order)</a></li>

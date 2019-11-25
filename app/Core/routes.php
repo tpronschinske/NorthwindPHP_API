@@ -20,8 +20,6 @@ Router::any('reset', 'Controllers\AuthController@resetEmail');
 Router::any('pass/(:any)', 'Controllers\AuthController@reset');
 Router::any('logout', 'Controllers\AuthController@logout');
 
-Router::any('install', 'Controllers\InstallController@index');
-
 Router::any('/customer', 'Controllers\CustomerController@getCustomers');
 Router::any('/customer/list', 'Controllers\CustomerController@getCustomerList');
 Router::any('/customer/(:any)', 'Controllers\CustomerController@getCustomerById');
@@ -36,6 +34,20 @@ Router::any('/category/(:any)', 'Controllers\CategoryController@getCategoryById'
 Router::any('/product', 'Controllers\ProductController@getProducts');
 Router::any('/product/(:any)', 'Controllers\ProductController@getProductById');
 
+Router::any('/employee', 'Controllers\EmployeeController@getEmployees');
+Router::any('/employee/(:any)', 'Controllers\EmployeeController@getEmployeeById');
+
+Router::any('/region', 'Controllers\RegionController@getRegions');
+Router::any('/region/(:any)', 'Controllers\RegionController@getRegionById');
+
+Router::any('/shipper', 'Controllers\ShipperController@getShippers');
+Router::any('/shipper/(:any)', 'Controllers\ShipperController@getShipperById');
+
+Router::any('/supplier', 'Controllers\SupplierController@getSuppliers');
+Router::any('/supplier/(:any)', 'Controllers\SupplierController@getSupplierById');
+
+Router::any('/territory', 'Controllers\TerritoryController@getTerritories');
+Router::any('/territory/(:any)', 'Controllers\TerritoryController@getTerritoryById');
 /* Module routes. */
 $hooks = Hooks::get();
 $hooks->run('routes');

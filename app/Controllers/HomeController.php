@@ -19,11 +19,6 @@ class HomeController extends Controller
 
     public function index()
     {
-
-        if(!DB_NAME){
-          Url::redirect('install');
-        }
-
         $data['pageId'] = 'Home';
         $data['title'] = 'Home';
         View::renderTemplate('header');
